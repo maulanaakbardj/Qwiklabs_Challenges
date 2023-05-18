@@ -91,7 +91,7 @@ kubectl create secret generic cloudsql-instance-credentials --from-file key.json
 
 I=$(gcloud sql instances describe griffin-dev-db --format="value(connectionName)")
 
-sed -i s/YOUR_SQL_INSTANCE/$I/g wp-deployment.yaml
+sed -i s/ griffin-dev-db/$I/g wp-deployment.yaml
 
 kubectl create -f wp-deployment.yaml
 
