@@ -5,7 +5,8 @@
 * Go to **VPC network** > **Firewall** > will see **open-access**
 * Use the following command from the cloud console:
 
-```yaml
+```
+yaml
 gcloud compute firewall-rules delete open-access
 ```
 
