@@ -36,3 +36,4 @@ sudo service apache2 restart
 cd /var/www/html/wordpress
 
 sudo nano wp-config.php
+# Change DB_HOST 'localhost' with IP SQL <wordpress>
